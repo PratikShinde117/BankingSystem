@@ -37,17 +37,17 @@ export default function CreateAccount() {
   };
 
   return (
-    <div>
+    <div style={{ padding: "20px", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:"center"}}>
       <h2>Create Account</h2>
-      <form onSubmit={handleSubmit}>
-        <input name="cust_name" placeholder="Name" value={form.cust_name} onChange={handleChange} required /><br/>
-        <input name="address" placeholder="Address" value={form.address} onChange={handleChange} /><br/>
-        <input type="email" name="email" placeholder="Email" value={form.email} onChange={handleChange} required /><br/>
-        <input type="password" name="pass_word" placeholder="Password" value={form.pass_word} onChange={handleChange} required /><br/>
-        <input name="phone_no" placeholder="Phone" value={form.phone_no} onChange={handleChange} /><br/>
-        <input name="pan_no" placeholder="PAN" value={form.pan_no} onChange={handleChange} /><br/>
-        <input name="aadhar_no" placeholder="Aadhar" value={form.aadhar_no} onChange={handleChange} /><br/>
-        <button type="submit">Create Account</button>
+      <form onSubmit={handleSubmit} style={{display: "flex", flexDirection: "column", justifyContent:"center", alignContent: "center" ,gap: "0.7rem" ,width: "50%"}}>
+        <input name="cust_name" placeholder="Name" value={form.cust_name} onChange={handleChange} style={{padding: "7px"}} required /><br/>
+        <input name="address" placeholder="Address" value={form.address} onChange={handleChange} style={{padding: "7px"}}/><br/>
+        <input type="email" name="email" placeholder="Email" value={form.email} onChange={handleChange} style={{padding: "7px"}} required /><br/>
+        <input type="password" name="pass_word" placeholder="Password" value={form.pass_word} onChange={handleChange} style={{padding: "7px"}} required /><br/>
+        <input name="phone_no" placeholder="Phone" value={form.phone_no} onChange={handleChange} style={{padding: "7px"}}/><br/>
+        <input name="pan_no" placeholder="PAN" value={form.pan_no} onChange={handleChange} style={{padding: "7px"}} /><br/>
+        <input name="aadhar_no" placeholder="Aadhar" value={form.aadhar_no} onChange={handleChange} style={{padding: "7px"}}/><br/>
+        <button type="submit" style={{padding: "7px", color:"white", backgroundColor:"black", border:"none", borderRadius:"5px"}}>Create Account</button>
       </form>
     </div>
   );

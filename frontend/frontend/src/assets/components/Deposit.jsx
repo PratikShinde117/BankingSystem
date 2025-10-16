@@ -19,15 +19,16 @@ export default function Deposit() {
   };
 
   return (
-    <div>
+    <div style={{ padding: "20px", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:"center"}}>
       <h2>Deposit Money</h2>
       <input
         type="number"
         placeholder="Amount"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
+        style={{padding: "7px", display: "flex", flexDirection: "column", marginBottom:"23px" ,width: "50%"}}
       />
-      <button onClick={handleDeposit}>Deposit</button>
+      <button onClick={handleDeposit} style={{padding: "7px"}}>Deposit</button>
     </div>
   );
 }
